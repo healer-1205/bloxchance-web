@@ -9,4 +9,5 @@ export type SidebarProps = {
     sideItems_A?: SideItem[];
     sideItems_B?: SideItem[];
     setCollapsed(collapsed: boolean): void;
+    shown: boolean;
   };

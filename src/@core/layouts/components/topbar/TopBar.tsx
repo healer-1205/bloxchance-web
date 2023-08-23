@@ -1,8 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 import { Icon_Blox } from "../../icons/index";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import ButtonOutline from "../../../../misc/ButtonOutline";
-const TopBar = () => {
+type Props = {
+  onSidebarClick(): void;
+};
+const TopBar = (props: Props) => {
   const textShadows = {
     textShadow: "0px 0px 13px rgba(0, 255, 102, 0.50)",
   };
@@ -21,8 +25,13 @@ const TopBar = () => {
         </h1>
       </div>
       <div className="flex space-x-1">
-        <button className="text-[#0F6] text-base font-Monts font-semibold">Sign up</button>
+        <button className="text-[#0F6] text-base font-Monts font-semibold pt-1">
+          Sign up
+        </button>
         <ButtonOutline>Log in</ButtonOutline>
+        <button className="block lg:hidden" onClick={props.onSidebarClick}>
+          <Bars3Icon className="h-6 w-6 text-[#0F6]" />
+        </button>
       </div>
     </div>
   );

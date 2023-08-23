@@ -7,10 +7,11 @@ import Sidebar from "./components/sidebar/SideBar";
 import { Outlet } from "react-router-dom";
 import TopBar from "./components/topbar/TopBar";
 const Layout = (props: PropsWithChildren<ReactNode>) => {
-  const [collapsed, setSidebarCollapsed] = useState(false);
+  const [collapsed, setSidebarCollapsed] = useState<boolean>(false);
+  const [showSideber, setShowSidebar] = useState<boolean>(false);
   return (
     <>
-    <TopBar/>
+    <TopBar onSidebarClick={() => setShowSidebar((prev) => !prev)}/>
       <div
         className={classNames({
           // 👇 use grid layout
@@ -27,6 +28,7 @@ const Layout = (props: PropsWithChildren<ReactNode>) => {
         <Sidebar
           collapsed={collapsed}
           setCollapsed={() => setSidebarCollapsed((prev) => !prev)}
+          shown = {showSideber}
         />
         {/* content */}
         <div className="bg-bloxchanceBG w-full h-full"></div>
