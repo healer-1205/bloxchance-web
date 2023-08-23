@@ -20,7 +20,7 @@ const TopBar = () => {
           bloxchance
         </h1>
       </div>
-      <div className="flex">
+      <div className="flex space-x-1">
         <button className="text-[#0F6] text-base font-Monts font-semibold">Sign up</button>
         <ButtonOutline>Log in</ButtonOutline>
       </div>
