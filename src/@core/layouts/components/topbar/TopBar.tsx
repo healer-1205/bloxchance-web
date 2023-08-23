@@ -20,7 +20,7 @@ const TopBar = (props: Props) => {
     >
       <div className="flex space-x-3 my-auto">
         <Icon_Blox />
-        <h1 className="text-[#0F6] text-3xl my-auto" style={textShadows}>
+        <h1 className="hidden sm:block text-[#0F6] text-3xl my-auto" style={textShadows}>
           bloxchance
         </h1>
       </div>
@@ -29,10 +29,11 @@ const TopBar = (props: Props) => {
           Sign up
         </button>
         <ButtonOutline>Log in</ButtonOutline>
-        <button className="block lg:hidden" onClick={props.onSidebarClick}>
+       
+      </div>
+       <button className="block lg:hidden" onClick={props.onSidebarClick}>
           <Bars3Icon className="h-6 w-6 text-[#0F6]" />
         </button>
-      </div>
     </div>
   );
 };
