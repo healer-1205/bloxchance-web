@@ -7,6 +7,10 @@ module.exports = {
         sidebar: "288px auto", //for sidebar layout
         "sidebar-collapsed": "88px auto", //for collapsed sidebar layout
       },
+      translate: {
+        '0': '0',
+        'full': '100%',
+      },
       fontFamily: {
         body: "Russo One",
         display:'Nunito',

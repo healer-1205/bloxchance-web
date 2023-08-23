@@ -20,7 +20,7 @@ const Layout = (props: PropsWithChildren<ReactNode>) => {
           "grid-cols-sidebar": !collapsed,
           "grid-cols-sidebar-collapsed": collapsed,
           // 👇 transition animation classes
-          "transition-[grid-template-columns] duration-300 ease-in-out": true,
+          "transition-[grid-template-columns] duration-500 ease-in-out": true,
           "bg-bloxchanceBG" :true,
         })}
       >
@@ -31,7 +31,7 @@ const Layout = (props: PropsWithChildren<ReactNode>) => {
           shown = {showSideber}
         />
         {/* content */}
-        <div className="bg-bloxchanceBG w-full h-full"></div>
+        <div className="bg-bloxchanceBG w-full h-full">{props.children}</div>
         {/* <div className="">{props.children}</div> */}
       </div>
     </>
