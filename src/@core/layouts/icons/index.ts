@@ -10,6 +10,7 @@ import Icon_Referrals from "./Icon_Referrals";
 import Icon_Withdraw from "./Icon_Withdraw"
 import Icon_Arrow_Close from "./Icon_Arrow_Close";
 import Icon_Arrow_Open from "./Icon_Arrow_Open";
+import Icon_Blox from "./Icon_Blox";
 export {
   Icon_Conflips,
   Icon_Cases,
@@ -23,4 +24,5 @@ export {
   Icon_Withdraw,
   Icon_Arrow_Close,
   Icon_Arrow_Open,
+  Icon_Blox,
 };

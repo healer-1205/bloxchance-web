@@ -9,6 +9,8 @@ module.exports = {
       },
       fontFamily: {
         body: "Russo One",
+        display:'Nunito',
+        Monts: 'Montserrat',
       },
       colors: {
         'sideBar': {
@@ -17,6 +19,9 @@ module.exports = {
           line: "#B2B2B2",
           hover: "#00BE4C",
         },
+        'bloxchanceBG': {
+          DEFAULT:"#07091D",
+        }
       },
     },
   },

@@ -5,11 +5,12 @@ import React, { PropsWithChildren, ReactNode, useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Sidebar from "./components/sidebar/SideBar";
 import { Outlet } from "react-router-dom";
+import TopBar from "./components/topbar/TopBar";
 const Layout = (props: PropsWithChildren<ReactNode>) => {
   const [collapsed, setSidebarCollapsed] = useState(false);
   return (
     <>
-    asfsdf
+    <TopBar/>
       <div
         className={classNames({
           // 👇 use grid layout
@@ -27,7 +28,7 @@ const Layout = (props: PropsWithChildren<ReactNode>) => {
           setCollapsed={() => setSidebarCollapsed((prev) => !prev)}
         />
         {/* content */}
-        asdfasdfasdf
+        <div className="bg-bloxchanceBG w-full h-full"></div>
         {/* <div className="">{props.children}</div> */}
       </div>
     </>
