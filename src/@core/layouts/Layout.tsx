@@ -20,6 +20,7 @@ const Layout = (props: PropsWithChildren<ReactNode>) => {
           "grid-cols-sidebar-collapsed": collapsed,
           // 👇 transition animation classes
           "transition-[grid-template-columns] duration-300 ease-in-out": true,
+          "bg-bloxchanceBG" :true,
         })}
       >
         {/* sidebar */}
