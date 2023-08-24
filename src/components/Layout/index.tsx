@@ -285,7 +285,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div
               className="flex h-16 shrink-0 items-center cursor-pointer"
               onClick={() => {
-                navigate("/mini")
+                navigate("/")
               }}>
               <icons.LogoIcon />
               <p className="text-[#00FF66] text-2xl font-bold font-display">
@@ -340,7 +340,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
 
-          <main className="py-10 bg-[#07091D] min-h-screen">
+          <main className="py-10 bg-[#07091D] min-h-screen lg:pl-72">
             <div className="px-4 sm:px-6 lg:px-8">{children}</div>
           </main>
         </div>
