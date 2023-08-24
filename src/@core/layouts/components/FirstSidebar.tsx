@@ -83,7 +83,7 @@ const FirstSidebar = () => {
     <>
       <div>
         <>
-          {/* <Transition.Root show={sidebarOpen} as={Fragment}>
+          <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
             className="relative z-50 lg:hidden"
@@ -200,7 +200,7 @@ const FirstSidebar = () => {
               </Transition.Child>
             </div>
           </Dialog>
-        </Transition.Root> */}
+        </Transition.Root>
         </>
         {/* Static sidebar for desktop */}
 

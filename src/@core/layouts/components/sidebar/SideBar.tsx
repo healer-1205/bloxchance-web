@@ -32,7 +32,11 @@ const Sidebar = ({
           className={cn({
             "bg-sideBar rounded-tr-3xl text-zinc-50 z-20": true,
             "transition-all duration-300 ease-in-out": true,
-            "lg:hidden lg:transition-all lg:duration-300 lg:ease-in-out": true,
+            "absolute h-full lg:hidden transition-all duration-300 ease-in-out": true,
+            "translate-x-0": true,
+            "-translate-x-full": !shown,
+            "w-[300px]": !collapsed,
+            "w-[88px]":collapsed
           })}
         >
           <div>
